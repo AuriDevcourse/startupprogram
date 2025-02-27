@@ -1,0 +1,237 @@
+:root {
+    --primary-dark: rgba(17, 17, 17, 0.9);
+    --border-color: rgba(242, 242, 242, 0.5);
+    --accent-color: #FF0028;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:transparent;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Grid Layouts */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    gap: 40px;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.grid-3-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.grid-2-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Card Styles */
+.card {
+    width: 250px;
+    height: 250px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(17, 17, 17, 0.7);
+    z-index: 1;
+}
+
+.card-content {
+    position: relative;
+    z-index: 2;
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.card h2 {
+    font-family: 'Archivo Expanded', sans-serif;
+    font-size: 22px;
+    line-height: 1.2;
+    margin: 0 0 0.5rem 0;
+    color: #f2f2f2;
+}
+
+.card p {
+    font-size: 12px;
+    margin-bottom: 2rem;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+/* Background Images */
+.exhibit-bg {
+    background: url('https://techbbq.dk/wp-content/uploads/2025/02/NorthStarPitch-2024.webp') center/cover no-repeat;
+}
+
+.pitch-bg {
+    background: url('https://techbbq.dk/wp-content/uploads/2025/02/Pitch-At-Life-Science.jpg') center/cover no-repeat;
+}
+
+.grow-bg {
+    background: url('https://techbbq.dk/wp-content/uploads/2025/01/coffee.webp') center/cover no-repeat;
+}
+
+.startup-showcase-img {
+    background-image: url('https://techbbq.dk/wp-content/uploads/2025/02/startupshowcaseFrame.webp');
+}
+
+/* Arrow Icon */
+.arrow {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    opacity: 0.8;
+    transition: transform 0.3s ease;
+}
+
+/* Expanded Content */
+.expanded-content {
+    display: none;
+    margin-top: 2rem;
+    padding: 2rem;
+    background: transparent;
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.expanded-content.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Info Cards */
+.info-card {
+    background: rgba(17, 17, 17, 0.7);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.info-card h3 {
+    font-family: 'Archivo Expanded', sans-serif;
+    font-size: 18px;
+    color: #f2f2f2;
+    margin: 1rem 0;
+}
+
+.info-card p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+.info-card .subtitle {
+    font-size: 12px;
+    font-style: italic;
+    opacity: 0.7;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    color: #f2f2f2;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    text-decoration: underline;
+    padding: 0;
+    margin-top: 1rem;
+    transition: opacity 0.3s ease;
+}
+
+.read-more-btn:hover {
+    opacity: 0.8;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.placeholder-image {
+    width: 80%;
+    height: 160px;
+    border-radius: 10px;
+    margin: 0 auto 1rem auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Responsive Design */
+@media (max-width: 850px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, 250px);
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .grid-3-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-3-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-2-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .card h2 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
