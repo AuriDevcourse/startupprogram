@@ -12,7 +12,7 @@
     <div class="container">
         <div class="grid">
             <!-- Exhibit Card -->
-            <div class="card exhibit-bg" onclick="toggleContent('exhibit-content')">
+            <div class="card exhibit-bg active" onclick="toggleContent('exhibit-content')">
                 <div class="card-content">
                     <h2>EXHIBIT</h2>
                     <p>Showcase your product or service to 10,000attendees, including investors and industry leaders.</p>
@@ -39,59 +39,61 @@
             </div>
         </div>
 
-        <!-- Expandable Content -->
-        <div id="exhibit-content" class="expanded-content">
-            <div class="grid-3-columns">
-                <div class="info-card">
-                    <div class="placeholder-image" style="background-image: url('https://techbbq.dk/wp-content/uploads/2025/02/startupshowcaseFrame.webp');"></div>
-                    <h3>Startup Showcase</h3>
-                    <p>Showcasing your product to a tailored audience.</p>
-                    <p class="subtitle">Open exclusively for Nordic and Baltic early stage startups.</p>
-                    <a href="#" class="read-more-btn">Read More</a>
-                </div>
-                <div class="info-card">
-                    <div class="placeholder-image" style="background-image: url('https://techbbq.dk/wp-content/uploads/2025/02/lifescienceFrame.webp');"></div>
-                    <h3>Life Science Startup Exhibition</h3>
-                    <p>Amplifying Denmark and the Nordic countries within the global life sciences industry.</p>
-                    <p class="subtitle">Funded by Novo Nordisk Foundation.</p>
-                    <a href="#" class="read-more-btn">Read More</a>
-                </div>
-                <div class="info-card">
-                    <div class="placeholder-image" style="background-image: url('https://techbbq.dk/wp-content/uploads/2025/02/urbantechshowcasingFrame.png');"></div>
-                    <h3>UrbanTech Startup Exhibition</h3>
-                    <p>Accelerating the development of smart, green and thriving cities in Denmark.</p>
-                    <p class="subtitle">Funded by Realdania, in collaboration with We Build Denmark, ConTech Lab, PropTech Denmark, Bloxhub</p>
-                    <a href="#" class="read-more-btn">Read More</a>
+         <!-- Content Container for all expanded content -->
+         <div class="content-container">
+            <!-- Expandable Content -->
+            <div id="exhibit-content" class="expanded-content active">
+                <div class="grid-3-columns">
+                    <div class="info-card">
+                        <div class="placeholder-image" style="background-image: url('https://techbbq.dk/wp-content/uploads/2025/02/startupshowcaseFrame.webp');"></div>
+                        <h3>Startup Showcase</h3>
+                        <p>Showcasing your product to a tailored audience.</p>
+                        <p class="subtitle">Open exclusively for Nordic and Baltic early stage startups.</p>
+                        <a href="https://techbbq.dk/startup-showcase/" target="_blank" class="read-more-btn">Read More</a>
+                    </div>
+                    <div class="info-card">
+                        <div class="placeholder-image" style="background-image: url('https://techbbq.dk/wp-content/uploads/2025/02/lifescienceFrame.webp');"></div>
+                        <h3>Life Science Startup Exhibition</h3>
+                        <p>Amplifying Denmark and the Nordic countries within the global life sciences industry.</p>
+                        <p class="subtitle">Funded by Novo Nordisk Foundation.</p>
+                        <a href="https://techbbq.dk/life-science/" target="_blank" class="read-more-btn">Read More</a>
+                    </div>
+                    <div class="info-card">
+                        <div class="placeholder-image" style="background-image: url('https://techbbq.dk/wp-content/uploads/2025/02/urbantechshowcasingFrame.png');"></div>
+                        <h3>UrbanTech Startup Exhibition</h3>
+                        <p>Accelerating the development of smart, green and thriving cities in Denmark.</p>
+                        <p class="subtitle">Funded by Realdania, in collaboration with We Build Denmark, ConTech Lab, PropTech Denmark, Bloxhub</p>
+                        <a href="https://techbbq.dk/urbantech/" target="_blank" class="read-more-btn">Read More</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-             <!-- Pitch Content -->
-             <div id="pitch-content" class="expanded-content">
+            <!-- Pitch Content -->
+            <div id="pitch-content" class="expanded-content">
                 <div class="grid-3-columns">
                     <div class="info-card">
                         <div class="placeholder-image" style="background-image: url('https://techbbq.dk/wp-content/uploads/2025/02/northstarpitchFrame.png');"></div>
                         <h3>North Star Pitch</h3>
                         <p>At TechBBQ 2025, 10 European startups will present their pitches on stage and compete for the title.</p>
-                        <a href="#" class="read-more-btn">Read More</a>
+                        <a href="https://techbbq.dk/north-star-pitch/" target="_blank" class="read-more-btn">Read More</a>
                     </div>
                     <div class="info-card">
                         <div class="placeholder-image" style="background-image: url('https://techbbq.dk/wp-content/uploads/2025/02/lifesciencepitchFrame.png');"></div>
                         <h3>Life Science Pitch Competition</h3>
                         <p>Amplifying Denmark and the Nordic countries within the global life sciences industry.</p>
                         <p class="subtitle">Funded by Novo Nordisk Foundation.</p>
-                        <a href="#" class="read-more-btn">Read More</a>
+                        <a href="https://techbbq.dk/life-science-pitch/" target="_blank" class="read-more-btn">Read More</a>
                     </div>
                     <div class="info-card">
                         <div class="placeholder-image" style="background-image: url('https://techbbq.dk/wp-content/uploads/2025/02/urbantechFrame.webp');"></div>
                         <h3>UrbanTech Pitch Competition</h3>
                         <p>Accelerating the development of smart, green and thriving cities in Denmark.</p>
                         <p class="subtitle">Funded by Realdania, in collaboration with We Build Denmark, ConTech Lab, PropTech Denmark, Bloxhub</p>
-                        <a href="#" class="read-more-btn">Read More</a>
+                        <a href="https://techbbq.dk/urbantech-pitch-competition/" target="_blank" class="read-more-btn">Read More</a>
                     </div>
                 </div>
             </div>
-    
+
             <!-- Grow Content -->
             <div id="grow-content" class="expanded-content">
                 <div class="grid-2-columns">
@@ -99,14 +101,14 @@
                         <div class="placeholder-image" style="background-image: url('https://techbbq.dk/wp-content/uploads/2025/02/heroacademyFrame.png');"></div>
                         <h3>Hero Academy</h3>
                         <p>Empowering early-stage startups looking for guidance and support through workshops, mentoring, and networking.</p>
-                        <a href="#" class="read-more-btn">Read More</a>
+                        <a href="https://techbbq.dk/hero-academy/" target="_blank" class="read-more-btn">Read More</a>
                     </div>
                     <div class="info-card">
                         <div class="placeholder-image" style="background-image: url('https://techbbq.dk/wp-content/uploads/2025/02/techtalentFrame.webp');"></div>
                         <h3>Tech Talent</h3>
                         <p>Startups – Find your next superstar employee at TechBBQ 2025!</p>
                         <p class="">Talents – Make your impression at speed matching with startups at TechBBQ</p>
-                        <a href="#" class="read-more-btn">Read More</a>
+                        <a href="https://techbbq.dk/tech-talent/" target="_blank" class="read-more-btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -116,17 +118,37 @@
         function toggleContent(contentId) {
             const content = document.getElementById(contentId);
             const allContent = document.querySelectorAll('.expanded-content');
+            const allCards = document.querySelectorAll('.card');
             
+            // Remove active state from all cards
+            allCards.forEach(card => {
+                card.classList.remove('active');
+            });
+
             // Close all other expanded content
             allContent.forEach(item => {
-                if (item.id !== contentId && item.classList.contains('active')) {
+                if (item.id !== contentId) {
                     item.classList.remove('active');
+                    // Find and deactivate the corresponding card
+                    const cardId = item.id.replace('-content', '');
+                    document.querySelector(`.${cardId}-bg`).classList.remove('active');
                 }
             });
 
-            // Toggle the clicked content
+            // Toggle the clicked content and its corresponding card
             content.classList.toggle('active');
+            const cardId = contentId.replace('-content', '');
+            document.querySelector(`.${cardId}-bg`).classList.toggle('active');
         }
+
+        // Show only Exhibit content by default
+        window.addEventListener('DOMContentLoaded', () => {
+            const exhibitContent = document.getElementById('exhibit-content');
+            const exhibitCard = document.querySelector('.exhibit-bg');
+            
+            exhibitContent.classList.add('active');
+            exhibitCard.classList.add('active');
+        });
     </script>
 </body>
 </html>
