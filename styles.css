@@ -198,15 +198,69 @@ body {
     padding: 1.5rem;
     transition: transform 0.3s ease, border-color 0.3s ease;
     text-align: center;
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
+    color: #fff;
+    position: relative;
 }
 
-.info-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent-color);
+.info-card a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.info-card a.placeholder-image-link {
+    display: block;
+    margin: -1.5rem -1.5rem 1rem;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+}
+
+.info-card .placeholder-image {
+    width: 100%;
+    height: 160px;
+    background-position: center;
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.info-card a:hover .placeholder-image {
+    transform: scale(1.05);
+}
+
+.apply-btn{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;  
+}
+
+.apply-btn:hover {
+    background-color: #cc0020;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--accent-color);
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.read-more-btn:hover {
+    background-color: #cc0020;
 }
 
 .info-card h3 {
@@ -217,32 +271,6 @@ body {
 .info-card p {
     color: #fff;
     margin: 0.5rem 0;
-}
-
-.info-card .read-more-btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: var(--accent-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1rem;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-}
-
-.info-card:hover .read-more-btn {
-    background-color: #cc0020;
-}
-
-.placeholder-image {
-    width: 80%;
-    height: 160px;
-    border-radius: 10px;
-    margin: 0 auto 1rem auto;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 /* Responsive Design */
