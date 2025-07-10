@@ -273,6 +273,23 @@ body {
     margin: 0.5rem 0;
 }
 
+.closed-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #888;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.7;
+    cursor: not-allowed;
+    margin-top: 1rem;
+    box-shadow: none;
+    pointer-events: none;
+    transition: none;
+}
+
 /* Responsive Design */
 @media (max-width: 850px) {
     .grid {
