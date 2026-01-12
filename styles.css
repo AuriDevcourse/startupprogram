@@ -31,11 +31,12 @@ body {
 
 .grid-3-columns {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
-    max-width: 1200px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
 }
 
 .grid-2-columns {
@@ -116,7 +117,7 @@ body {
 }
 
 .pitch-bg {
-    background: url('https://techbbq.dk/wp-content/uploads/2025/02/Pitch-At-Life-Science.jpg') center/cover no-repeat;
+    background: url('https://techbbq.dk/wp-content/uploads/2025/02/Pitch-At-Life-Science.webp') center/cover no-repeat;
 }
 
 .grow-bg {
